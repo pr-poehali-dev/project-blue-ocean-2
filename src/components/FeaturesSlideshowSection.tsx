@@ -8,27 +8,27 @@ const slides = [
     title: "НПЗ-партнёр",
     description:
       "НПЗ предоставляет газы гидрокрекинга, площадку и инфраструктуру. Взамен — новый высокодоходный продукт, снижение углеродного следа и выполнение ESG-обязательств.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://cdn.poehali.dev/projects/a4c8670d-0fdd-40f9-a522-b145807e91bf/files/925a9568-0f88-49b4-b43d-bf0eb47e5f4e.jpg",
   },
   {
     id: 2,
     title: "Технологический партнёр",
     description: "Разработчик CVD-процесса и катализаторных систем. Лицензирование технологии, сопровождение запуска, постгарантийное обслуживание реакторного блока.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://cdn.poehali.dev/projects/a4c8670d-0fdd-40f9-a522-b145807e91bf/files/c7637c27-8640-44ca-a159-b57f9df0902a.jpg",
   },
   {
     id: 3,
     title: "Рынок сбыта",
     description:
       "Нанотрубки: производители композитов, аккумуляторов, электроники. Адсорбенты: нефтехимия, водоочистка, фармацевтика. Долгосрочные контракты с промышленными потребителями.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://cdn.poehali.dev/projects/a4c8670d-0fdd-40f9-a522-b145807e91bf/files/3d8a2776-f53f-461b-b5cd-ff38d55e3e73.jpg",
   },
   {
     id: 4,
     title: "Инвестор",
     description:
       "IRR 35–50%, горизонт 5–7 лет. Возможны схемы: прямые инвестиции, проектное финансирование, совместное предприятие с НПЗ. Государственные программы поддержки новых материалов.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://cdn.poehali.dev/projects/a4c8670d-0fdd-40f9-a522-b145807e91bf/files/925a9568-0f88-49b4-b43d-bf0eb47e5f4e.jpg",
   },
 ]
 
