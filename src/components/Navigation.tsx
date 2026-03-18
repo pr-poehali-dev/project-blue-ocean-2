@@ -13,25 +13,25 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-8">
             <a href="/" className="text-xl font-bold font-display">
-              LaunchPad
+              CarbonTech НПЗ
             </a>
             <div className="hidden md:flex items-center gap-6">
               <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Возможности
+                Технология
               </a>
               <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Тарифы
+                Инвестиции
               </a>
               <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                О нас
+                О проекте
               </a>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <ShinyButton variant="secondary" className="hidden sm:inline-flex">
-              Войти
+              Скачать PDF
             </ShinyButton>
-            <ShinyButton>Начать</ShinyButton>
+            <ShinyButton>Связаться</ShinyButton>
           </div>
         </div>
       </div>

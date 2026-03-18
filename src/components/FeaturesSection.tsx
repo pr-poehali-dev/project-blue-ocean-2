@@ -1,38 +1,38 @@
 import { Card } from "@/components/ui/card"
-import { Zap, Shield, BarChart3, Workflow, Globe, Lock } from "lucide-react"
 import { motion } from "framer-motion"
+import Icon from "@/components/ui/icon"
 
 export function FeaturesSection() {
   const features = [
     {
-      icon: Zap,
-      title: "Молниеносно",
-      description: "Создан для скорости с edge-вычислениями и глобальным CDN. Мгновенные ответы каждый раз.",
+      icon: "Flame",
+      title: "Сырьё без затрат",
+      description: "Углеводородные газы гидрокрекинга уже производятся на НПЗ — это готовое сырьё для синтеза нанотрубок без дополнительных закупок.",
     },
     {
-      icon: Shield,
-      title: "Безопасность",
-      description: "Банковский уровень шифрования и соответствие стандартам SOC 2, GDPR и HIPAA.",
+      icon: "Atom",
+      title: "CVD-технология",
+      description: "Каталитическое химическое осаждение из газовой фазы — промышленно отработанный метод производства МУНТ с высокой чистотой и воспроизводимостью.",
     },
     {
-      icon: BarChart3,
-      title: "Аналитика",
-      description: "Аналитика в реальном времени и детальные отчеты для отслеживания показателей.",
+      icon: "BarChart3",
+      title: "Маржинальность х10",
+      description: "Стоимость нанотрубок — от 50 до 300 USD/кг при стоимости сырья близкой к нулю. Высокая добавленная стоимость к отходам нефтепереработки.",
     },
     {
-      icon: Workflow,
-      title: "Интеграции",
-      description: "Подключайте любимые инструменты через наш API и готовые интеграции.",
+      icon: "Filter",
+      title: "Адсорбенты нового поколения",
+      description: "Адсорбенты на основе МУНТ превосходят активированный уголь по ёмкости в 3–5 раз. Применение: очистка воды, нефтепродуктов, воздуха.",
     },
     {
-      icon: Globe,
-      title: "Глобальный охват",
-      description: "Развертывание по всему миру с автоматическим масштабированием и SLA 99,9%.",
+      icon: "Globe",
+      title: "Растущий рынок",
+      description: "Мировой рынок углеродных нанотрубок — $5,4 млрд в 2023 г., прогноз роста 18% CAGR до 2030 г. Дефицит предложения в РФ.",
     },
     {
-      icon: Lock,
-      title: "Приватность",
-      description: "Ваши данные остаются вашими. Мы никогда не продаем информацию третьим лицам.",
+      icon: "Leaf",
+      title: "ESG и декарбонизация",
+      description: "Утилизация газов вместо сжигания снижает выбросы CO₂. Проект соответствует ESG-стратегиям нефтяных компаний и требованиям регуляторов.",
     },
   ]
 
@@ -46,35 +46,32 @@ export function FeaturesSection() {
         className="text-center mb-16"
       >
         <h2 className="text-3xl sm:text-5xl font-bold mb-4 text-balance font-display">
-          Все для вашего успеха
+          Почему это работает
         </h2>
         <p className="text-lg text-muted-foreground text-balance max-w-2xl mx-auto leading-relaxed">
-          Мощные функции, которые помогут вам создавать, запускать и масштабировать продукты быстрее, чем когда-либо.
+          Технология опирается на уже существующую инфраструктуру НПЗ — минимальные капитальные затраты, максимальная маржа.
         </p>
       </motion.div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {features.map((feature, index) => {
-          const Icon = feature.icon
-          return (
-            <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ y: -4 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-            >
-              <Card className="p-6 bg-card border-border hover:border-primary/50 transition-colors h-full">
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <Icon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 font-display">{feature.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
-              </Card>
-            </motion.div>
-          )
-        })}
+        {features.map((feature, index) => (
+          <motion.div
+            key={feature.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -4 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+          >
+            <Card className="p-6 bg-card border-border hover:border-primary/50 transition-colors h-full">
+              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <Icon name={feature.icon} className="h-6 w-6 text-primary" fallback="Zap" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 font-display">{feature.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+            </Card>
+          </motion.div>
+        ))}
       </div>
     </section>
   )

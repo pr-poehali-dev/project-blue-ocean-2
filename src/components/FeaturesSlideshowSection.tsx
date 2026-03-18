@@ -5,29 +5,29 @@ import { Button } from "@/components/ui/button"
 const slides = [
   {
     id: 1,
-    title: "Поставщики",
+    title: "НПЗ-партнёр",
     description:
-      "Получайте оплату сразу, предоставьте клиентам гибкие платежи и оставьте заботу о сборе платежей нам. Партнерский канал одобрен.",
+      "НПЗ предоставляет газы гидрокрекинга, площадку и инфраструктуру. Взамен — новый высокодоходный продукт, снижение углеродного следа и выполнение ESG-обязательств.",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: 2,
-    title: "Реселлеры",
-    description: "Сократите закрытие сделок с недель до минут благодаря простому финансированию и быстрым выплатам.",
+    title: "Технологический партнёр",
+    description: "Разработчик CVD-процесса и катализаторных систем. Лицензирование технологии, сопровождение запуска, постгарантийное обслуживание реакторного блока.",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: 3,
-    title: "Покупатели",
+    title: "Рынок сбыта",
     description:
-      "Дайте клиентам доступ к технологиям и услугам, которые им нужны для успеха, с гибкими вариантами оплаты.",
+      "Нанотрубки: производители композитов, аккумуляторов, электроники. Адсорбенты: нефтехимия, водоочистка, фармацевтика. Долгосрочные контракты с промышленными потребителями.",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: 4,
-    title: "Бизнес-решения",
+    title: "Инвестор",
     description:
-      "Масштабируйте бизнес с решениями корпоративного уровня, индивидуальными условиями и поддержкой для крупных сделок.",
+      "IRR 35–50%, горизонт 5–7 лет. Возможны схемы: прямые инвестиции, проектное финансирование, совместное предприятие с НПЗ. Государственные программы поддержки новых материалов.",
     image: "/placeholder.svg?height=400&width=600",
   },
 ]
@@ -43,7 +43,6 @@ export function FeaturesSlideshowSection() {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length)
   }
 
-  // Calculate which slides to show (current + next 1 or 2 depending on screen size)
   const getVisibleSlides = () => {
     const visible = []
     for (let i = 0; i < 3; i++) {
@@ -57,7 +56,7 @@ export function FeaturesSlideshowSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-start justify-between mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-balance max-w-2xl">
-            Выигрыш для бизнеса, партнеров и клиентов
+            Выгода для каждого участника
           </h2>
           <div className="flex gap-2">
             <Button
@@ -97,7 +96,6 @@ export function FeaturesSlideshowSection() {
           </div>
         </div>
 
-        {/* Slide indicators */}
         <div className="flex justify-center gap-2 mt-8">
           {slides.map((_, idx) => (
             <button

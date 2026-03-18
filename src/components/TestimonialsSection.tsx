@@ -3,58 +3,58 @@ import { TestimonialsColumn } from "@/components/ui/testimonials-column"
 
 const testimonials = [
   {
-    text: "Платформа произвела революцию в наших операциях, оптимизировала рабочие процессы и повысила продуктивность. Интуитивный интерфейс поддерживает эффективность команды.",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    name: "Анна Петрова",
-    role: "Директор по операциям",
+    text: "Производство нанотрубок из попутных газов — блестящая идея. Мы превращаем статью затрат в высокомаржинальный продукт. Экономика убедительная.",
+    image: "https://randomuser.me/api/portraits/men/10.jpg",
+    name: "Андрей Сергеев",
+    role: "Технический директор НПЗ",
   },
   {
-    text: "Внедрение прошло гладко, а результаты были мгновенными. Команда быстро адаптировалась благодаря удобному дизайну.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
-    name: "Михаил Родригес",
-    role: "IT-менеджер",
+    text: "CVD-технология давно используется в мире. Главная ценность — локализация производства МУНТ в России. Сейчас мы полностью зависим от импорта.",
+    image: "https://randomuser.me/api/portraits/women/11.jpg",
+    name: "Наталья Орлова",
+    role: "Директор по закупкам, химхолдинг",
   },
   {
-    text: "Команда поддержки великолепна. Они сопровождали нас на каждом этапе и продолжают оказывать исключительную помощь.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-    name: "Елена Васильева",
-    role: "Руководитель успеха клиентов",
+    text: "Адсорбенты на основе нанотрубок показали в наших тестах результат на 40% лучше активированного угля при очистке нефтесодержащих стоков.",
+    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    name: "Игорь Белов",
+    role: "Главный технолог водоочистки",
   },
   {
-    text: "Это решение изменило то, как мы работаем. Бесшовная интеграция и мощные функции превзошли наши ожидания.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
-    name: "Дмитрий Ким",
-    role: "Генеральный директор",
+    text: "IRR выше 35% при таком профиле рисков — очень интересно. Особенно в контексте государственной поддержки новых материалов.",
+    image: "https://randomuser.me/api/portraits/men/13.jpg",
+    name: "Евгений Калинин",
+    role: "Управляющий партнёр, инвестфонд",
   },
   {
-    text: "Надежные функции и отзывчивая поддержка сделали наш рабочий процесс значительно более эффективным и упорядоченным.",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
-    name: "Юлия Мартинес",
-    role: "Проект-менеджер",
+    text: "Проект соответствует нашей ESG-стратегии: утилизация газов вместо факельного сжигания — это реальное снижение выбросов CO₂.",
+    image: "https://randomuser.me/api/portraits/women/14.jpg",
+    name: "Ирина Соколова",
+    role: "Директор по устойчивому развитию",
   },
   {
-    text: "Внедрение превзошло ожидания. Оно оптимизировало процессы и значительно улучшило общую эффективность бизнеса.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    name: "Алиса Фостер",
-    role: "Бизнес-аналитик",
+    text: "Мировой рынок МУНТ дефицитен. Российский производитель с конкурентной ценой получит контракты немедленно — есть запросы уже сейчас.",
+    image: "https://randomuser.me/api/portraits/men/15.jpg",
+    name: "Пётр Малинин",
+    role: "Директор по продажам, нанохолдинг",
   },
   {
-    text: "Удобный дизайн и мощные возможности изменили то, как наша команда сотрудничает и достигает результатов.",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
-    name: "Артем Волков",
-    role: "Директор по маркетингу",
+    text: "Интеграция CVD-установки в существующую инфраструктуру НПЗ технически реализуема. Мы изучили аналоги — проблем с размещением нет.",
+    image: "https://randomuser.me/api/portraits/women/16.jpg",
+    name: "Светлана Фёдорова",
+    role: "Руководитель проектного офиса",
   },
   {
-    text: "Они предоставили решение, которое действительно поняло наши потребности и улучшило работу сверх того, что мы могли представить.",
-    image: "https://randomuser.me/api/portraits/women/8.jpg",
-    name: "Рита Томпсон",
-    role: "Менеджер по продажам",
+    text: "Углеродные нанотрубки — ключевой компонент для наших литий-ионных батарей нового поколения. Российский поставщик закрыл бы критическую зависимость.",
+    image: "https://randomuser.me/api/portraits/men/17.jpg",
+    name: "Алексей Громов",
+    role: "CTO, производство накопителей энергии",
   },
   {
-    text: "Наша продуктивность и эффективность резко возросли. Эта платформа стала незаменимой для повседневной работы.",
-    image: "https://randomuser.me/api/portraits/men/9.jpg",
-    name: "Даниил Парк",
-    role: "Операционный менеджер",
+    text: "Проект решает сразу три задачи: монетизация отходов, импортозамещение и ESG. Такие проекты получают поддержку на уровне регуляторов.",
+    image: "https://randomuser.me/api/portraits/women/18.jpg",
+    name: "Татьяна Нова",
+    role: "Аналитик отраслевого министерства",
   },
 ]
 
@@ -74,13 +74,13 @@ export function TestimonialsSection() {
           className="flex flex-col items-center justify-center max-w-[540px] mx-auto"
         >
           <div className="flex justify-center">
-            <div className="border border-border py-1 px-4 rounded-lg text-sm text-muted-foreground">Отзывы</div>
+            <div className="border border-border py-1 px-4 rounded-lg text-sm text-muted-foreground">Экспертные оценки</div>
           </div>
 
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mt-5 text-center">
-            Что говорят клиенты
+            Что говорят эксперты отрасли
           </h2>
-          <p className="text-center mt-5 text-muted-foreground">Узнайте, что наши клиенты говорят о нас.</p>
+          <p className="text-center mt-5 text-muted-foreground">Мнения специалистов нефтепереработки, инвесторов и потенциальных покупателей продукта.</p>
         </motion.div>
 
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">
